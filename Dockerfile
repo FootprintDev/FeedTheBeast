@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN ["apt-get", "update"]
 RUN ["apt-get", "-y", "upgrade"]
-RUN ["apt-get", "install", "-y", "openjdk-11-jre-headless", "wget"]
+RUN ["apt-get", "install", "-y", "openjdk-8-jre-headless", "wget"]
 
 COPY ["eula.txt", "/opt"]
 COPY ["server.properties", "/opt"]

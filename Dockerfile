@@ -12,6 +12,6 @@ WORKDIR /opt
 RUN ["wget", "-O", "mod", "https://api.modpacks.ch/public/modpack/35/2059/server/linux"]
 RUN ["chmod", "+x", "mod"]
 
-RUN ["mod", "35", "--auto"]
+RUN ["./mod", "35", "--auto"]
 
 ENTRYPOINT [ "bash", "start.sh" ]
